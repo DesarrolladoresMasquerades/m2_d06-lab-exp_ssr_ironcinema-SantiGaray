@@ -1,0 +1,28 @@
+<a href="http://localhost:3000/movies">Go Back</a>
+<br>
+
+
+<section id="details">
+    <div>
+        <img src={{image}} alt={{title}}>
+    </div>
+    <div>
+        <h2>{{title}}</h4>   
+        <h3>Directors: {{director}}</h3>
+        <h5>Stars:</h5>
+        <ul>
+        {{#each stars}}
+            <li>{{this}}</li>
+        {{/each}}
+        </ul>
+        <p>{{description}}</p>
+        <p>
+            {{#each showtimes}}
+            <span>{{this}} |</span>
+            {{/each}}
+        </p> 
+    </div>   
+</section>
+
+      
+  
